@@ -1,0 +1,15 @@
+shadowsocks安装
+一、购买服务器（优惠码：BWH1ZBPVK）CentOS 6 64位
+https://bwh1.net/cart.php?a=confproduct&i=0
+二、服务器配置
+ssh连接服务器
+root用户登录执行：
+wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
+chmod +x shadowsocks.sh
+./shadowsocks.sh 2>&1 | tee shadowsocks.log
+
+可能出现的问题：
+-bash: wget: command not found
+解决办法：
+yum -y install wget
+
