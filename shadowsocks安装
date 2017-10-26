@@ -13,3 +13,10 @@ chmod +x shadowsocks.sh
 解决办法：
 yum -y install wget
 
+
+修改端口号：
+/etc下shadowsocks.json文件
+重启shadowsocks：/etc/init.d/shadowsocks restart
+关闭防火墙（iptables）：/etc/init.d/iptables stop
+
+
