@@ -44,3 +44,4 @@
         str += "</video>";
         _this.elemt.innerHTML = str; //将str放到要插入的对象中
     }
+</script>
